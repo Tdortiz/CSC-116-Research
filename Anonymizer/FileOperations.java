@@ -4,6 +4,12 @@ import java.io.IOException;
 import java.io.File;
 import java.nio.file.*;
 
+/**
+ * FileOperations handles restructuring a folder as well as
+ * ensuring student data is anonymous.
+ * @author Thomas Ortiz tdortiz@ncsu.edu (Anonymous Scripting)
+ * @author Zach Butler zcbutler@ncsu.edu (Rename Scripting)
+ */
 public class FileOperations {
 
     /** The Submissions directory or specified directory by user */
@@ -37,6 +43,11 @@ public class FileOperations {
         input.close();
     }
 
+    /**
+     * Restructure a folder called <Submissions> by creating student directories
+     * and placing student files in their respective directory.
+     * @param folderName to restructure
+     */
     public static void renameSubmissions(String folderName){
         File folder = new File(folderName);
         File[] allFiles = folder.listFiles(); // Array of User Folders (StudentA, StudentB, StudentC)
@@ -57,6 +68,14 @@ public class FileOperations {
         }
     }
 
+    /**
+     * Renames the file based off of the students name
+     * @param  f          [description]
+     * @param  folderName [description]
+     * @param  heirarchy  [description]
+     * @param  newName    [description]
+     * @return            [description]
+     */
     private static boolean renameFile(File f, String folderName, String heirarchy, String newName) {
         if (f.renameTo(new File(folderName + "/" + heirarchy + "/" + newName))) {
             return true;
@@ -96,6 +115,11 @@ public class FileOperations {
         }
     }
 
+    /**
+     * Pre: Assumes use of the above rename algorithm.
+     * Clears the @author tag of all files and creates a file into a new anonymous directory in Anon_Submissions
+     * Post: Creates Anon_Submissions folder in same directory as FileOperations.java
+     */
     public static void anon(){
         File folders = new File(Submissions); // The <Submissions> directory
         File[] studentFolders = folders.listFiles(); // Array of each student direction in <Submissions>
