@@ -1,0 +1,31 @@
+///////////////////////////////////////////////////////
+////////////////////////// STYLE //////////////////////
+///////////////////////////////////////////////////////
+Checkstyle front-end script by Tyler Bletsch (tkbletsc@ncsu.edu).
+  (Rev 10)
+
+Run checkstyle on one or more files, including an indentation check based on
+auto-detecting the level of indentation used (must be 2, 3, or 4).
+
+Syntax: /home/thomas/cs/checkstyle <files ...>
+Checkstyle front-end script by Tyler Bletsch (tkbletsc@ncsu.edu).
+  (Rev 10)
+
+Run checkstyle on one or more files, including an indentation check based on
+auto-detecting the level of indentation used (must be 2, 3, or 4).
+
+Syntax: /home/thomas/cs/checkstyle <files ...>
+Checkstyle front-end script by Tyler Bletsch (tkbletsc@ncsu.edu).
+  (Rev 10)
+
+Run checkstyle on one or more files, including an indentation check based on
+auto-detecting the level of indentation used (must be 2, 3, or 4).
+
+Syntax: /home/thomas/cs/checkstyle <files ...>
+Checkstyle front-end script by Tyler Bletsch (tkbletsc@ncsu.edu).
+  (Rev 10)
+
+Run checkstyle on one or more files, including an indentation check based on
+auto-detecting the level of indentation used (must be 2, 3, or 4).
+
+Syntax: /home/thomas/cs/checkstyle <files ...>
